@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./Login.css";
+import "./Tail.css"
 
 
 
 const Login = () => {
+  <link href="/src/style.css" rel="stylesheet"></link>
   const [isSignIn, setIsSignIn] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -30,10 +32,11 @@ const Login = () => {
             </a>
           </>
         )}
-        
 
         <h2>Welcome</h2>
         <h1>{isSignIn ? "Sign In" : "Sign Up"}</h1>
+        <br />
+        <br />
 
         <form onSubmit={handleSubmit}>
           <div>
@@ -42,6 +45,7 @@ const Login = () => {
           <div>
             <input
               type="email"
+              className="border border-black-300 rounded-md p-2"
               id="email"
               placeholder="E-mail address"
               required
@@ -58,6 +62,7 @@ const Login = () => {
               <div>
                 <input
                   type="text"
+                  className="border border-black-300 rounded-md p-2"
                   id="username"
                   placeholder="Username"
                   required
@@ -71,6 +76,7 @@ const Login = () => {
               <div>
                 <input
                   type="text"
+                  className="border border-black-300 rounded-md p-2"
                   id="number"
                   placeholder="Contact Number"
                   required
@@ -87,13 +93,14 @@ const Login = () => {
           <div>
             <input
               type="password"
+              className="border border-black-300 rounded-md p-2"
               id="password"
               placeholder="Password"
               required
             />
           </div>
           <br />
-          <br />
+          
           <button type="submit">{isSignIn ? "Sign In" : "Sign Up"}</button>
           <br />
           <br />
