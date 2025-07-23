@@ -1,17 +1,17 @@
-import React, { useState } from 'react'
-import './Login.css'
+import React, { useState } from "react";
+import "./Login.css";
+
+
 
 const Login = () => {
-
   const [isSignIn, setIsSignIn] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!isSignIn) {
-    setIsSignIn(true);
+      setIsSignIn(true);
     }
   };
 
-  
   return (
     <div className="login">
       <div className="box">
@@ -22,8 +22,7 @@ const Login = () => {
               Sign Up
             </a>
           </>
-        ) :
-         (
+        ) : (
           <>
             <span>Have an account? </span>
             <a href="#" onClick={() => setIsSignIn(true)}>
@@ -32,7 +31,7 @@ const Login = () => {
           </>
         )}
         
-        
+
         <h2>Welcome</h2>
         <h1>{isSignIn ? "Sign In" : "Sign Up"}</h1>
 
@@ -50,9 +49,7 @@ const Login = () => {
           </div>
           <br />
           <br />
-          
-          
-          
+
           {!isSignIn && (
             <>
               <div>
@@ -83,10 +80,7 @@ const Login = () => {
               <br />
             </>
           )}
-          
-          
-          
-          
+
           <div>
             <label htmlFor="password">Enter your password</label>
           </div>
@@ -104,10 +98,6 @@ const Login = () => {
           <br />
           <br />
 
-          
-          
-          
-          
           {isSignIn && (
             <>
               <span>Forgot Password? </span>
