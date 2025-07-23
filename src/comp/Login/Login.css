@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color:burlywood;
+  color: #f7f9f7(250, 246, 246, 0.87);
+  
+}
+
+#email {
+  width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  }
+  #password {
+    border-radius: 20px;
+    font-size: 16px;
+    width: 400px;
+    padding: 10px;
+  }
+  #username {
+    border-radius: 20px;
+    font-size: 16px;
+    width: 400px;
+    padding: 10px;
+  }
+  #number {
+    border-radius: 20px;
+    font-size: 16px; 
+    width: 400px; 
+    padding: 10px;
+  }
+
+.box {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 539px;
+  height: 741px;
+}
+
+
+button{
+  background-color:burlywood;
+  width: 400px;
+  border-radius: 20px;
+  padding: 20px;
+}
+  
